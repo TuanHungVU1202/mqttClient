@@ -41,6 +41,11 @@ class mqttHandler {
   sendMessage(message) {
     this.mqttClient.publish('controlMess', message);
   }
+  /*
+  receiveMessage(message) {
+    this.mqttClient.subscribe('controlMess', message);
+  }
+  */
 }
 
 module.exports = mqttHandler;
